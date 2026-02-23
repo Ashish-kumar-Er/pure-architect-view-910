@@ -1,12 +1,15 @@
+import { useTranslation } from "react-i18next";
 import ScrollReveal from "@/components/ScrollReveal";
 
 const About = () => {
+  const { t } = useTranslation();
+
   const promises = [
-    { title: "Client-Focused Design", desc: "A design approach centered entirely around your vision and needs" },
-    { title: "Practical & Budget-Friendly", desc: "Solutions that balance quality with cost-effectiveness" },
-    { title: "Attention to Detail", desc: "Meticulous quality in every aspect of design and execution" },
-    { title: "On-Time Delivery", desc: "Committed to meeting deadlines without compromising quality" },
-    { title: "End-to-End Support", desc: "Complete design support from concept to completion" },
+    { titleKey: "p1_title", descKey: "p1_desc" },
+    { titleKey: "p2_title", descKey: "p2_desc" },
+    { titleKey: "p3_title", descKey: "p3_desc" },
+    { titleKey: "p4_title", descKey: "p4_desc" },
+    { titleKey: "p5_title", descKey: "p5_desc" },
   ];
 
   return (
@@ -15,29 +18,26 @@ const About = () => {
         <div className="max-w-7xl mx-auto">
           <div className="grid md:grid-cols-2 gap-20 items-center">
             <ScrollReveal direction="left">
-              <h2 className="text-minimal text-muted-foreground mb-4">ABOUT</h2>
+              <h2 className="text-minimal text-muted-foreground mb-4">{t("about.label")}</h2>
               <h3 className="text-4xl md:text-6xl font-light text-architectural mb-12">
-                Why Choose Us
+                {t("about.heading")}
               </h3>
-              
               <p className="text-lg text-muted-foreground leading-relaxed">
-                A-Line Architects is a Kanpur-based architecture and design firm delivering 
-                thoughtful, functional, and aesthetic solutions. We specialize in creating 
-                modern, cost-effective, and practical designs tailored to client needs.
+                {t("about.description")}
               </p>
             </ScrollReveal>
             
             <div className="space-y-12">
               <div>
                 <ScrollReveal direction="right">
-                  <h4 className="text-minimal text-muted-foreground mb-6">OUR PROMISE</h4>
+                  <h4 className="text-minimal text-muted-foreground mb-6">{t("about.promise_label")}</h4>
                 </ScrollReveal>
                 <div className="space-y-6">
                   {promises.map((item, i) => (
                     <ScrollReveal key={i} direction="right" delay={i * 0.1}>
                       <div className="border-l-2 border-foreground pl-6">
-                        <h5 className="text-lg font-medium mb-2">{item.title}</h5>
-                        <p className="text-muted-foreground">{item.desc}</p>
+                        <h5 className="text-lg font-medium mb-2">{t(`about.${item.titleKey}`)}</h5>
+                        <p className="text-muted-foreground">{t(`about.${item.descKey}`)}</p>
                       </div>
                     </ScrollReveal>
                   ))}
@@ -46,14 +46,10 @@ const About = () => {
               
               <ScrollReveal direction="right" delay={0.3}>
                 <div className="pt-8 border-t border-border">
-                  <div>
-                    <h4 className="text-minimal text-muted-foreground mb-2">LOCATION</h4>
-                    <address className="text-xl not-italic">
-                      IA Resort, Jajmau
-                      <br />
-                      Kanpur
-                    </address>
-                  </div>
+                  <h4 className="text-minimal text-muted-foreground mb-2">{t("about.location_label")}</h4>
+                  <address className="text-xl not-italic whitespace-pre-line">
+                    {t("about.location")}
+                  </address>
                 </div>
               </ScrollReveal>
             </div>

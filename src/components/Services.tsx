@@ -1,42 +1,17 @@
+import { useTranslation } from "react-i18next";
 import ScrollReveal from "@/components/ScrollReveal";
 
 const Services = () => {
+  const { t } = useTranslation();
+
   const services = [
-    {
-      number: "01",
-      title: "ARCHITECTURAL DESIGN & PLANNING",
-      description: "Complete architectural design and planning services tailored to your vision and requirements"
-    },
-    {
-      number: "02", 
-      title: "RESIDENTIAL ARCHITECTURE",
-      description: "Villas, houses, and apartments designed with modern aesthetics and practical functionality"
-    },
-    {
-      number: "03",
-      title: "COMMERCIAL ARCHITECTURE",
-      description: "Shops, offices, and complexes built for business success and user experience"
-    },
-    {
-      number: "04",
-      title: "INTERIOR DESIGN & TURNKEY",
-      description: "End-to-end interior design and turnkey solutions that transform spaces completely"
-    },
-    {
-      number: "05",
-      title: "3D ELEVATION & WALKTHROUGHS",
-      description: "Realistic 3D visualizations and walkthroughs to experience your project before construction"
-    },
-    {
-      number: "06",
-      title: "RENOVATION & REDEVELOPMENT",
-      description: "Breathing new life into existing structures with contemporary design and smart planning"
-    },
-    {
-      number: "07",
-      title: "PROJECT CONSULTANCY",
-      description: "Expert consultancy and on-site coordination to ensure smooth project execution"
-    }
+    { number: "01", titleKey: "s1_title", descKey: "s1_desc" },
+    { number: "02", titleKey: "s2_title", descKey: "s2_desc" },
+    { number: "03", titleKey: "s3_title", descKey: "s3_desc" },
+    { number: "04", titleKey: "s4_title", descKey: "s4_desc" },
+    { number: "05", titleKey: "s5_title", descKey: "s5_desc" },
+    { number: "06", titleKey: "s6_title", descKey: "s6_desc" },
+    { number: "07", titleKey: "s7_title", descKey: "s7_desc" },
   ];
 
   return (
@@ -44,9 +19,9 @@ const Services = () => {
       <div className="container mx-auto px-6">
         <div className="max-w-7xl mx-auto">
           <ScrollReveal className="mb-20">
-            <h2 className="text-minimal text-muted-foreground mb-4">OUR SERVICES</h2>
+            <h2 className="text-minimal text-muted-foreground mb-4">{t("services.label")}</h2>
             <h3 className="text-4xl md:text-6xl font-light text-architectural">
-              What We Do
+              {t("services.heading")}
             </h3>
           </ScrollReveal>
           
@@ -60,10 +35,10 @@ const Services = () => {
                     </span>
                     <div>
                       <h4 className="text-xl font-light mb-4 text-architectural group-hover:text-muted-foreground transition-colors duration-500">
-                        {service.title}
+                        {t(`services.${service.titleKey}`)}
                       </h4>
                       <p className="text-muted-foreground leading-relaxed">
-                        {service.description}
+                        {t(`services.${service.descKey}`)}
                       </p>
                     </div>
                   </div>
