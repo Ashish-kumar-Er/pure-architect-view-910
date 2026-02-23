@@ -1,0 +1,89 @@
+{
+  "nav": {
+    "work": "WORK",
+    "services": "SERVICES",
+    "about": "ABOUT",
+    "blog": "BLOG",
+    "contact": "CONTACT"
+  },
+  "hero": {
+    "title1": "Designing Spaces.",
+    "title2": "Defining Lifestyles.",
+    "subtitle": "A Kanpur-based architecture and design firm delivering thoughtful, functional, and aesthetic solutions",
+    "scroll": "SCROLL"
+  },
+  "services": {
+    "label": "OUR SERVICES",
+    "heading": "What We Do",
+    "s1_title": "ARCHITECTURAL DESIGN & PLANNING",
+    "s1_desc": "Complete architectural design and planning services tailored to your vision and requirements",
+    "s2_title": "RESIDENTIAL ARCHITECTURE",
+    "s2_desc": "Villas, houses, and apartments designed with modern aesthetics and practical functionality",
+    "s3_title": "COMMERCIAL ARCHITECTURE",
+    "s3_desc": "Shops, offices, and complexes built for business success and user experience",
+    "s4_title": "INTERIOR DESIGN & TURNKEY",
+    "s4_desc": "End-to-end interior design and turnkey solutions that transform spaces completely",
+    "s5_title": "3D ELEVATION & WALKTHROUGHS",
+    "s5_desc": "Realistic 3D visualizations and walkthroughs to experience your project before construction",
+    "s6_title": "RENOVATION & REDEVELOPMENT",
+    "s6_desc": "Breathing new life into existing structures with contemporary design and smart planning",
+    "s7_title": "PROJECT CONSULTANCY",
+    "s7_desc": "Expert consultancy and on-site coordination to ensure smooth project execution"
+  },
+  "about": {
+    "label": "ABOUT",
+    "heading": "Why Choose Us",
+    "description": "A-Line Architects is a Kanpur-based architecture and design firm delivering thoughtful, functional, and aesthetic solutions. We specialize in creating modern, cost-effective, and practical designs tailored to client needs.",
+    "promise_label": "OUR PROMISE",
+    "p1_title": "Client-Focused Design",
+    "p1_desc": "A design approach centered entirely around your vision and needs",
+    "p2_title": "Practical & Budget-Friendly",
+    "p2_desc": "Solutions that balance quality with cost-effectiveness",
+    "p3_title": "Attention to Detail",
+    "p3_desc": "Meticulous quality in every aspect of design and execution",
+    "p4_title": "On-Time Delivery",
+    "p4_desc": "Committed to meeting deadlines without compromising quality",
+    "p5_title": "End-to-End Support",
+    "p5_desc": "Complete design support from concept to completion",
+    "location_label": "LOCATION",
+    "location": "IA Resort, Jajmau\nKanpur"
+  },
+  "contact": {
+    "label": "GET IN TOUCH",
+    "heading1": "Let's Build Your",
+    "heading2": "Dream Space",
+    "email_label": "EMAIL",
+    "phone_label": "PHONE",
+    "studio_label": "STUDIO",
+    "follow_label": "FOLLOW US",
+    "tagline": "We specialize in creating modern, cost-effective, and practical designs tailored to your needs. From concept to completion, A-Line Architects is your trusted partner in building exceptional spaces."
+  },
+  "enquiry": {
+    "label": "ENQUIRY",
+    "heading": "Send Us a Message",
+    "name": "Your Name",
+    "email": "Your Email",
+    "phone": "Phone Number (optional)",
+    "service": "Select a Service",
+    "service_placeholder": "Choose a service...",
+    "message": "Your Message",
+    "submit": "Send Enquiry",
+    "sending": "Sending...",
+    "success": "Thank you! Your enquiry has been submitted successfully.",
+    "error": "Something went wrong. Please try again.",
+    "services": {
+      "architectural": "Architectural Design & Planning",
+      "residential": "Residential Architecture",
+      "commercial": "Commercial Architecture",
+      "interior": "Interior Design & Turnkey",
+      "3d": "3D Elevation & Walkthroughs",
+      "renovation": "Renovation & Redevelopment",
+      "consultancy": "Project Consultancy"
+    }
+  },
+  "portfolio": {
+    "label": "SELECTED WORK",
+    "heading": "Our Projects"
+  },
+  "language": "Language"
+}
