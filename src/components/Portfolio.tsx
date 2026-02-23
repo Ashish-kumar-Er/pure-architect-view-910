@@ -1,27 +1,27 @@
 import ScrollReveal from "@/components/ScrollReveal";
-import project1 from "@/assets/project-1.jpg";
-import project2 from "@/assets/project-2.jpg";
-import project3 from "@/assets/project-3.jpg";
+import projectVilla from "@/assets/project-villa-kanpur.jpg";
+import projectOffice from "@/assets/project-office-kanpur.jpg";
+import projectInterior from "@/assets/project-interior-kanpur.jpg";
 
 const Portfolio = () => {
   const projects = [
     {
-      image: project1,
-      title: "MINIMAL RESIDENCE",
-      location: "NEW YORK, 2024",
-      description: "A contemporary home focusing on light, space, and material honesty"
+      image: projectVilla,
+      title: "MODERN VILLA — SWAROOP NAGAR",
+      location: "KANPUR, 2024",
+      description: "A contemporary 4BHK villa with clean lines, open-plan living, and a landscaped garden"
     },
     {
-      image: project2,
-      title: "CORPORATE HEADQUARTERS",
-      location: "LONDON, 2023",
-      description: "Modern office space emphasizing collaboration and natural elements"
+      image: projectOffice,
+      title: "CORPORATE OFFICE — MALL ROAD",
+      location: "KANPUR, 2024",
+      description: "Modern glass-facade office with flexible workspaces and energy-efficient design"
     },
     {
-      image: project3,
-      title: "CULTURAL CENTER",
-      location: "TOKYO, 2023",
-      description: "Public architecture that bridges tradition with contemporary design"
+      image: projectInterior,
+      title: "LUXURY LIVING ROOM INTERIORS",
+      location: "CIVIL LINES, KANPUR, 2024",
+      description: "Complete turnkey interior with marble flooring, custom lighting, and warm contemporary aesthetics"
     }
   ];
 
@@ -43,8 +43,9 @@ const Portfolio = () => {
                   <div className="relative overflow-hidden">
                     <img 
                       src={project.image} 
-                      alt={project.title}
+                      alt={`${project.title} — ${project.description}`}
                       className="w-full h-[70vh] object-cover transition-transform duration-700 group-hover:scale-105"
+                      loading="lazy"
                     />
                     <div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
                   </div>
