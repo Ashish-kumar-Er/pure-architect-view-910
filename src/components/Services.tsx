@@ -2,23 +2,38 @@ const Services = () => {
   const services = [
     {
       number: "01",
-      title: "RESIDENTIAL",
-      description: "Crafting homes that reflect individual lifestyles while maintaining architectural integrity"
+      title: "ARCHITECTURAL DESIGN & PLANNING",
+      description: "Complete architectural design and planning services tailored to your vision and requirements"
     },
     {
       number: "02", 
-      title: "COMMERCIAL",
-      description: "Designing functional spaces that enhance business environments and user experiences"
+      title: "RESIDENTIAL ARCHITECTURE",
+      description: "Villas, houses, and apartments designed with modern aesthetics and practical functionality"
     },
     {
       number: "03",
-      title: "RENOVATION",
-      description: "Transforming existing structures with contemporary sensibilities and sustainable practices"
+      title: "COMMERCIAL ARCHITECTURE",
+      description: "Shops, offices, and complexes built for business success and user experience"
     },
     {
       number: "04",
-      title: "CONSULTATION",
-      description: "Providing expert guidance on design direction, planning, and architectural solutions"
+      title: "INTERIOR DESIGN & TURNKEY",
+      description: "End-to-end interior design and turnkey solutions that transform spaces completely"
+    },
+    {
+      number: "05",
+      title: "3D ELEVATION & WALKTHROUGHS",
+      description: "Realistic 3D visualizations and walkthroughs to experience your project before construction"
+    },
+    {
+      number: "06",
+      title: "RENOVATION & REDEVELOPMENT",
+      description: "Breathing new life into existing structures with contemporary design and smart planning"
+    },
+    {
+      number: "07",
+      title: "PROJECT CONSULTANCY",
+      description: "Expert consultancy and on-site coordination to ensure smooth project execution"
     }
   ];
 
@@ -27,7 +42,7 @@ const Services = () => {
       <div className="container mx-auto px-6">
         <div className="max-w-7xl mx-auto">
           <div className="mb-20">
-            <h2 className="text-minimal text-muted-foreground mb-4">SERVICES</h2>
+            <h2 className="text-minimal text-muted-foreground mb-4">OUR SERVICES</h2>
             <h3 className="text-4xl md:text-6xl font-light text-architectural">
               What We Do
             </h3>
@@ -41,7 +56,7 @@ const Services = () => {
                     {service.number}
                   </span>
                   <div>
-                    <h4 className="text-2xl font-light mb-4 text-architectural group-hover:text-muted-foreground transition-colors duration-500">
+                    <h4 className="text-xl font-light mb-4 text-architectural group-hover:text-muted-foreground transition-colors duration-500">
                       {service.title}
                     </h4>
                     <p className="text-muted-foreground leading-relaxed">
